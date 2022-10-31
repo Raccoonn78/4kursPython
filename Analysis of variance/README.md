@@ -64,13 +64,7 @@ SST= SSB + SSW
 Сравниваем 3 группы, в каждой из которых по 3 значения. 
 Нулевая гипотеза: в генеральной совокупности нет значимых различий между средними, все средние трёх групп равны друг другу. Альтернативная гипотеза: хотя бы пара средних значимо различается между собой.
 
- $$ H_{0}: μ_{1}=μ_{2}=μ_{3} $$
-И
- $$ H_{1}: μ_{1} ≠μ_2=μ_{3} $$   
-Или  
- $$ μ_1=μ_{2}≠μ_{3} $$  
-Или    
- $$ μ_{1}≠μ_{2}≠μ_{3} $$ 
+ $$ H_{0}: μ_{1}=μ_{2}=μ_{3} ТакЖе H_{1}: μ_{1} ≠μ_{2}=μ_{3} ИЛИ μ_1=μ_{2}≠μ_{3} ИЛИ μ_{1}≠μ_{2}≠μ_{3} $$ 
   
 ##### Вычислим среднее значение всех наблюдений:  
 
@@ -79,14 +73,28 @@ SST= SSB + SSW
 ##### Вычислим общую сумму квадратов:  
 ![Analysis of variance/picture_formuls/P2.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P2.PNG)  
 ##### Степени свободы для общей суммы квадратов:
-$$  〖dF〗_SST=n-1=9-1=8  $$
+$$  dF_{SST}=n-1=9-1=8  $$
 ##### Вычислим средние значения внутри каждой из групп: 
 ![Analysis of variance/picture_formuls/P3.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P3.PNG)  
 ##### Внутригрупповая сумма квадратов:
 ![Analysis of variance/picture_formuls/P4.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P4.PNG)  
 ##### Степени свободы для внутригрупповой суммы квадратов:
-dF_{SSW} =n-m=9-3=6
+$$ dF_{SSW} =n-m=9-3=6 $$
 ##### Межгрупповая сумма квадратов:
 ![Analysis of variance/picture_formuls/P5.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P5.PNG)  
 ##### Степени свободы для межгрупповой суммы квадратов:
 ![Analysis of variance/picture_formuls/P6.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P6.PNG)  
+
+##### Межгрупповая дисперсия:
+![Analysis of variance/picture_formuls/P7.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P7.PNG)
+##### Внутригрупповая дисперсия:
+![Analysis of variance/picture_formuls/P8.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P8.PNG)
+##### Вычислим F-значение:  
+![Analysis of variance/picture_formuls/P9.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P9.PNG)
+
+Критическое значение отношения Фишера:  
+$$ F_{0,05; 2;6} =5,14 $$
+Так как фактическое отношение Фишера меньше критического:  
+$$ F=12>5,14=F_{0,05; 2;6} $$
+можно сделать вывод, что есть существенные различия между группами.   
+
