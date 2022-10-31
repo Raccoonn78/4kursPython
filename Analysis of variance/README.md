@@ -68,7 +68,7 @@ H0: μ_1 〖=μ〗_2=μ_3
 H1: μ_1 〖≠μ〗_2=μ_3 или μ_1 〖=μ〗_2≠μ_3 или μ_1 〖≠μ〗_2≠μ_3  
 ##### Вычислим среднее значение всех наблюдений:  
 
- ![Alt-текст](Analysis of variance/picture_formuls/P1.PNG)
+ ![Alt-текст]([Analysis of variance/picture_formuls/P1.PNG](https://github.com/Raccoonn78/4kursPython/blob/e8a8281f42e4afb2204bfe75eca9caabbb49acf9/Analysis%20of%20variance/picture_formuls/P1.PNG))
 
 ##### Вычислим общую сумму квадратов:  
 SST=▒∑_(i=1)^m▒∑_(j=1)^(n_i) ▒(x_ij-x ̿ )^2  (1-4)^2+(2-4)^2+(3-4)^2+
