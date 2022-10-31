@@ -68,21 +68,19 @@ H0: μ_1 〖=μ〗_2=μ_3
 H1: μ_1 〖≠μ〗_2=μ_3 или μ_1 〖=μ〗_2≠μ_3 или μ_1 〖≠μ〗_2≠μ_3  
 ##### Вычислим среднее значение всех наблюдений:  
 
-![Analysis of variance/picture_formuls/P1.PNG](https://github.com/Raccoonn78/4kursPython/blob/e8a8281f42e4afb2204bfe75eca9caabbb49acf9/Analysis%20of%20variance/picture_formuls/P1.PNG)
+![Analysis of variance/picture_formuls/P1.PNG](https://github.com/Raccoonn78/4kursPython/blob/e8a8281f42e4afb2204bfe75eca9caabbb49acf9/Analysis%20of%20variance/picture_formuls/P1.PNG)  
 
 ##### Вычислим общую сумму квадратов:  
-![Analysis of variance/picture_formuls/P2.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P2.PNG)
+![Analysis of variance/picture_formuls/P2.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P2.PNG)  
 ##### Степени свободы для общей суммы квадратов:
 〖dF〗_SST=n-1=9-1=8
 ##### Вычислим средние значения внутри каждой из групп: 
-![Analysis of variance/picture_formuls/P3.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P3.PNG)
-Внутригрупповая сумма квадратов:
-![Analysis of variance/picture_formuls/P4.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P4.PNG)
-Степени свободы для внутригрупповой суммы квадратов:
-〖dF〗_SSW=n-m=9-3=6
-Межгрупповая сумма квадратов:
-SSB=∑_(i=1)^m▒〖n_i (x ̅_i-x ̿ )〗^2  〖=3(2-4)〗^2+〖3(4-4)〗^2+〖3(6-4)〗^2=24
-Степени свободы для межгрупповой суммы квадратов:
-〖dF〗_SSB=m-1=3-1=2
-SST =30
-SSB=24             SSW=6
+![Analysis of variance/picture_formuls/P3.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P3.PNG)  
+##### Внутригрупповая сумма квадратов:
+![Analysis of variance/picture_formuls/P4.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P4.PNG)  
+##### Степени свободы для внутригрупповой суммы квадратов:
+dF_{SSW} =n-m=9-3=6
+##### Межгрупповая сумма квадратов:
+![Analysis of variance/picture_formuls/P5.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P5.PNG)  
+##### Степени свободы для межгрупповой суммы квадратов:
+![Analysis of variance/picture_formuls/P6.PNG](https://github.com/Raccoonn78/4kursPython/blob/613e2e66c53648fd2b088b263d86b3f67141d14b/Analysis%20of%20variance/picture_formuls/P6.PNG)  
